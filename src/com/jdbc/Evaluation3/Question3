@@ -1,0 +1,7 @@
+ Statement : ==> It is used to access your database. The command interface cannot accept parameters and
+ is useful when you use static SQL commands at runtime. If you only want to run the SQL query once,
+ then this interface is preferred over PreparedStatement.
+
+ Prepared Statement:==>
+ It is used when you want to use SQL statements many times.
+ The PreparedStatement interface accepts input parameters at runtime.

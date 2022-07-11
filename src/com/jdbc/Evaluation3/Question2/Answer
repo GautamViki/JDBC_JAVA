@@ -1,0 +1,8 @@
+The execute() ==>method is the most general method you can use to run an SQL statement in JDBC. To execute an SQL statement using the execute method,
+call it by passing a valid SQL statement to it as a String object or as a string literal.
+
+executeUpdate(String SQL)==>: Returns the number of rows affected by the execution of the SQL statement. Use this method to execute SQL statements where you expect a certain number of rows to be affected—for example,
+INSERT, UPDATE, or DELETE statements.
+
+executeQuery(String SQL)==> Returns a ResultSet object. Use this method if you expect to get a result set,
+just like with a SELECT statement.

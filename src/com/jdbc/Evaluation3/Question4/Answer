@@ -1,0 +1,17 @@
+create table MasaiEmployee(
+employee_id int,
+name  varchar(16),
+job_title varchar(20),
+reports_to int
+);
+
+
+
+insert into MasaiEmployee values
+(1, "Vikas" ,"vp",NULL),
+(2, "Chandni", "IA", 1),
+(3, "Rajesh", "IA", 1),
+(4, "Anshul", "IA", 1);
+
+select name As employee, job_title As job_title,  "Vikas" as manager  from MasaiEmployee where reports_to =
+ (select employee_id from MasaiEmployee where name = "Vikas");
